@@ -1,0 +1,23 @@
+# Personal Neovim config
+
+# OS / editor junk
+.DS_Store
+*.swp
+*.swo
+*~
+
+# Neovim local state that may appear in the config tree
+tags
+spell/
+.netrwhist
+
+# Optional local scratch
+test.sh
+nvim
+
+# Keep lazy-lock.json tracked for reproducible plugin versions
+# (uncomment the next line if you prefer not to commit the lockfile)
+# lazy-lock.json
+
+# Claude Code per-machine settings
+.claude/settings.local.json
