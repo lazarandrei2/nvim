@@ -63,10 +63,22 @@ return {
 				lualine_a = { pill_cap("\u{e0b6}"), pill("mode"), pill_cap("\u{e0b4}") },
 				lualine_b = {
 					"branch",
-					{ "diff", diff_color = { added = { fg = 2 }, modified = { fg = 3 }, removed = { fg = 1 } } },
+					{
+						"diff",
+						diff_color = {
+							added = { fg = 2 },
+							modified = { fg = 3 },
+							removed = { fg = 1 },
+						},
+					},
 					{
 						"diagnostics",
-						diagnostics_color = { error = { fg = 1 }, warn = { fg = 3 }, info = { fg = 4 }, hint = { fg = 6 } },
+						diagnostics_color = {
+							error = { fg = 1 },
+							warn = { fg = 3 },
+							info = { fg = 4 },
+							hint = { fg = 6 },
+						},
 					},
 				},
 				lualine_c = { "filename" },

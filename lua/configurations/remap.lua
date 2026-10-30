@@ -13,4 +13,3 @@ vim.keymap.set("n", "<leader>j", "<C-w>j", { desc = "Window down" })
 vim.keymap.set("n", "<leader>k", "<C-w>k", { desc = "Window up" })
 
 vim.keymap.set("i", "jk", "<ESC>")
-

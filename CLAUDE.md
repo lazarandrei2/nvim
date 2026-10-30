@@ -12,7 +12,7 @@ Neovim 0.12+ Lua config with lazy.nvim. Modular layout: core settings, keymaps, 
 - `init.lua` → `require("configurations")`
 
 ### Core (`lua/configurations/`)
-- `init.lua` — leader, `have_nerd_font`, loads set/colors/remap/lazy; filetype indent table
+- `init.lua` — leader, `have_nerd_font`, loads set/colors/remap/lazy
 - `set.lua` — options, undo under `stdpath("state")/undo`, diagnostic virtual lines
 - `colors.lua` — syntax colors mapped to terminal ANSI slots (`termguicolors` off, so Neovim follows the terminal theme)
 - `remap.lua` — custom keybindings
@@ -51,8 +51,10 @@ Neovim 0.12 defaults: `gra` code action, `grn` rename, `grr` references, `gO` do
 
 Custom on attach: `gd` / `gD` / `K` / `<leader>ca`. Diagnostics: `[d` / `]d` / `U`.
 
-Vue: `vue_ls` + `ts_ls` with `@vue/typescript-plugin`; Node vs Deno roots via colocated `package.json` + `tsconfig`.
+TS: `ts_ls`, rooted at the nearest `package.json`.
 Angular: only when `angular.json` / `nx.json` found.
 SourceKit: Apple `xcrun` (not Mason), Swift only.
 
-Mason `ensure_installed` / `automatic_enable` whitelist: lua_ls, zls, tailwindcss, omnisharp, angularls, svelte, vue_ls, ts_ls, denols, elixirls, kotlin_lsp, basedpyright, ruff.
+Diagnostic navigation (`[d` / `]d`) uses the 0.12 defaults, which wrap at buffer ends.
+
+Mason `ensure_installed` / `automatic_enable` whitelist: lua_ls, zls, tailwindcss, angularls, svelte, ts_ls.

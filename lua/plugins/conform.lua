@@ -14,14 +14,11 @@ return {
 		formatters_by_ft = {
 			lua = { "stylua" },
 			go = { "gofumpt" },
-			python = { "ruff_organize_imports", "ruff_format" },
 			javascript = { "prettier" },
 			typescript = { "prettier" },
 			json = { "prettier" },
 			html = { "prettier" },
 			css = { "prettier" },
-			elixir = { "mix" },
-			kotlin = { "lsp" },
 		},
 		formatters = {
 			prettier = {

@@ -5,18 +5,14 @@ local parsers = {
 	"bash",
 	"go",
 	"rust",
-	"python",
 	"toml",
 	"typescript",
 	"tsx",
-	"kotlin",
 	"html",
 	"css",
-	"elixir",
 	"swift",
 	"json",
 	"markdown",
-	"vue",
 }
 
 return {
